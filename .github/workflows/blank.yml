@@ -1,0 +1,13 @@
+name: First Workflow
+
+# when this gets executed, define event triggers
+on: workflow_dispatch
+
+jobs: 
+  first-job:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Print greeting
+        run: echo "Hello World!"
+      - name: Print goodbye
+        run: echo "Done - goodbye!"
